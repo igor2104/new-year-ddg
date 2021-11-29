@@ -5,7 +5,7 @@ Visit http://rainbow.arch.scriptmania.com/scripts/
 */
 
 // Set the number of snowflakes (more than 30 - 40 not recommended)
-var snowmax = 40;
+var snowmax = 60;
 
 // Set the colors for the snow. Add as many colors as you like
 var snowcolor = new Array(
@@ -20,7 +20,7 @@ var snowcolor = new Array(
 var snowtype = new Array("Times", "Arial", "Times", "Verdana");
 
 // Set the letter that creates your snowflake (recommended: * )
-var snowletter = "&#9679;";
+var snowletter = "*";
 
 // Set the speed of sinking (recommended values range from 0.3 to 2)
 var sinkspeed = 1.5;
