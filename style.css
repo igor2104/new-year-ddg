@@ -200,3 +200,26 @@ body {
   width: 230px;
   margin-left: 100px;
 }
+
+@keyframes snow {
+  0% {
+    background-position: 0px 0px, 0px 0px, 0px 0px;
+  }
+  100% {
+    background-position: 500px 1000px, 400px 400px, 300px 300px;
+  }
+}
+
+.new-year {
+  pointer-events: none;
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url(/image/new-year/snowflake.png),
+    url(./image/new-year/snowflake3.png), url(./image/new-year/snowflake2.png);
+  height: 100%;
+  animation: snow 5s linear infinite;
+  z-index: 99999;
+}
