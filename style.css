@@ -1,0 +1,202 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #000c4a;
+  background: url(./image/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: top;
+}
+
+.container {
+  max-width: 1110px;
+  width: 100%;
+  margin: auto;
+}
+
+.btn {
+  background: linear-gradient(92.95deg, #e63b9b -1.74%, #268af6 100.34%);
+  backdrop-filter: blur(50px);
+  border-radius: 5px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 18px 0;
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.header {
+  position: relative;
+  min-height: 620px;
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-content: start;
+}
+
+.header .header__title {
+  margin-top: 0;
+  margin-bottom: 54px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 65px;
+  grid-column: 1/10;
+}
+
+.header .header__description {
+  grid-column: 1/6;
+  font-size: 18px;
+}
+
+.header .header__btn {
+  grid-column: 1/4;
+  margin-top: 90px;
+}
+
+.header .header__image {
+  position: absolute;
+  right: -50px;
+  top: 100px;
+}
+
+.s-possibility .s-possibility__title {
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 80px;
+}
+
+.s-possibility .s-possibility__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  margin-bottom: 30px;
+}
+
+.s-possibility .s-possibility__card {
+  border: 1px solid;
+  border-image-source: url(./image/border.png);
+  border-image-slice: 23;
+  border-image-width: 20px;
+  padding: 25px;
+  font-size: 15px;
+  position: relative;
+}
+
+.s-possibility .s-possibility__card--first:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -28px;
+  height: 50px;
+  width: 100%;
+  background-image: url(./image/snowdrift-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.s-possibility .s-possibility__card--two:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 17px;
+  top: -30px;
+  height: 90px;
+  width: 100%;
+  background-image: url(./image/snowdrift-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.s-possibility .s-possibility__card--three:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: -38px;
+  right: -39px;
+  height: 108px;
+  width: 120px;
+  background-image: url(./image/snowdrift-3.png);
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.s-possibility .s-possibility__card--last {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s-possibility .s-possibility__icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(92.95deg, #e63b9b -1.74%, #268af6 100.34%);
+  box-shadow: inset -3px 3px 3px rgba(255, 255, 255, 0.25),
+    inset 3px -3px 3px rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.s-possibility .s-possibility__icon:before {
+  content: " ";
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.s-possibility .s-possibility__icon:after {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 52px;
+  height: 31px;
+  background: linear-gradient(
+    92.95deg,
+    rgba(230, 59, 155, 0.4) -1.74%,
+    rgba(38, 138, 246, 0.4) 100.34%
+  );
+  filter: blur(10px);
+  border-radius: 15px;
+  left: 4px;
+  bottom: -6px;
+}
+
+.s-possibility .s-possibility__icon--lock:before {
+  background-image: url(./image/icons/lock.svg);
+}
+
+.s-possibility .s-possibility__icon--brain:before {
+  background-image: url(./image/icons/brain.svg);
+}
+
+.s-possibility .s-possibility__icon--key:before {
+  background-image: url(./image/icons/key.svg);
+}
+
+.s-possibility .s-possibility__icon--check:before {
+  background-image: url(./image/icons/check.svg);
+}
+
+.s-possibility .s-possibility__icon--balance:before {
+  background-image: url(./image/icons/balance.svg);
+}
+
+.s-possibility .s-possibility__icon--planet:before {
+  background-image: url(./image/icons/planet.svg);
+}
+
+.s-possibility .s-possibility__card-name {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.s-possibility .s-possibility__btn {
+  width: 230px;
+  margin-left: 100px;
+}
